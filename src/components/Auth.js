@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleAuth } from '../actions/bankingActions';
+import { toggleAuth } from '../actions/authActions';
 
 const Auth = () => {
   const auth = useSelector((state) => state.auth);

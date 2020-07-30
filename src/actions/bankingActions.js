@@ -20,9 +20,3 @@ export const toggleAccount = () => {
     type: 'TOGGLE_ACCOUNT'
   };
 };
-
-export const toggleAuth = () => {
-  return {
-    type: 'TOGGLE_AUTH'
-  };
-};
