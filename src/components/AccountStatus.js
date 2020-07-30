@@ -1,5 +1,9 @@
 import React from 'react';
 
 export default function AccountStatus() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Savings Account</h1>
+    </div>
+  );
 }

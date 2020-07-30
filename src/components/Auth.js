@@ -1,5 +1,13 @@
 import React from 'react';
 
-export default function Auth() {
-  return <div></div>;
-}
+const Auth = () => {
+  return (
+    <div>
+      <button type="button" className="btn btn-info">
+        Login
+      </button>
+    </div>
+  );
+};
+
+export default Auth;
