@@ -1,11 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-export default function Balance() {
-  const store = useSelector((state) => state);
+const Balance = () => {
+  const balance = useSelector((state) => state.banking.balance);
+
   return (
     <div>
-      <h1>${store}</h1>
+      <h1>${balance}</h1>
     </div>
   );
-}
+};
+
+export default Balance;

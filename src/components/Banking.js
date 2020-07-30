@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {
-  deposit,
-  withdraw,
   collectInterest,
-  deleteAccount
+  deleteAccount,
+  deposit,
+  toggleAccount,
+  withdraw
 } from '../actions/bankingActions';
 
 export default function Banking() {
@@ -19,14 +20,16 @@ export default function Banking() {
   };
 
   const handleCollectInterest = () => {
-    dispatch(collectInterest);
+    dispatch(collectInterest());
   };
 
   const handledDelete = () => {
-    dispatch(deleteAccount);
+    dispatch(deleteAccount());
   };
 
-  const handleChangeAccount = () => {};
+  const handleChangeAccount = () => {
+    dispatch(toggleAccount());
+  };
 
   return (
     <div className="form-group">
